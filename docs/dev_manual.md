@@ -31,6 +31,7 @@ Welcome to the Developer's Manual section, where I (Adityaraj) will personal wal
 4. Install Body Parser: `npm install body-parser`
 
 5. Install DotEnv: `npm install dotenv`
+
 **Disclaimer:** Create a new file named `.env` in the `root directory` (not the public folder). Store all your API keys in this file to maintain confidentiality and security.
 
 
@@ -92,7 +93,7 @@ FundWise using multiple API to make it more intuitve and personalized for you! P
 
    1. Review the sample JSON response
      ```json
-     {
+    {
     "meta": {
         "fund_house": "SBI Mutual Fund",
         "scheme_type": "Open Ended Schemes",
