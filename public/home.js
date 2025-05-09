@@ -61,7 +61,7 @@ function viewFund(code) {
 }
 
 if (annyang) {
-  const pages = {
+  const pages = {   
     "home": "home.html",
     "about": "about.html",
     "stocks": "stocks.html",
