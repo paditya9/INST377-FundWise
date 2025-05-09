@@ -4,10 +4,10 @@
     - [2.0.2. Install Dependencies](#202-install-dependencies)
     - [2.0.3. Run](#203-run)
 - [3. Testing](#3-testing)
-- [5. API Documentation](#5-api-documentation)
+- [4. API Documentation](#4-api-documentation)
     - [List of API's](#list-of-apis)
-- [6. Bugs and Issue](#6-bugs-and-issue)
-- [7. RoadMap Ahead](#7-roadmap-ahead)
+- [5. Bugs and Issue](#5-bugs-and-issue)
+- [6. RoadMap Ahead](#6-roadmap-ahead)
 
 
 # 1. Developer's Manual
@@ -53,20 +53,20 @@ To view the logs:
 4. Review the test outputs for better understanding.
 
 
-# 5. API Documentation
+# 4. API Documentation
 FundWise using multiple API to make it more intuitve and personalized for you! Please review below all the API's to better understand the code funtionality. 
 
 ### List of API's
 1. 
 
 
-# 6. Bugs and Issue 
+# 5. Bugs and Issue 
 1. Sometimes you aren't able to run the webpage on your [Local Host](http://localhost:3000), in such cases, do the following:
    1. Exit open webpage.
    
    2. Exit terminal.
 
-   3. Install all the packages listed under [Installing Dependencies](#installing-dependencies) section.
+   3. Install all the packages listed under [2.0.2. Install Dependencies](#202-install-dependencies) section.
 
    4. Re-run [Local Host](http://localhost:3000)
 
@@ -75,7 +75,7 @@ FundWise using multiple API to make it more intuitve and personalized for you! P
 3. When visualizing two mutual funds simultaneously, if their relative values differ significantly, the graph may appear as a nearly straight line.
 
 
-# 7. RoadMap Ahead
+# 6. RoadMap Ahead
 - [ ] Develop a login page
 - [ ] Integrate login details with Supabase for tracking user history and enabling personalization
 - [ ] Implement machine learning features to simplify mutual fund selection
