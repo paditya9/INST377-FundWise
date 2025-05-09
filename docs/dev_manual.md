@@ -1,7 +1,4 @@
-- [1. Introduction](#1-introduction)
-- [2. Problem](#2-problem)
 
-
-# 1. Introduction
-
-# 2. Problem
+# Installing Application
+## Cloning FundWise
+`https://github.com/paditya9/INST377-FundWise.git`
