@@ -68,7 +68,7 @@ FundWise using multiple API to make it more intuitve and personalized for you! P
 
    1. **Note:** You will need to create an account and get your own API Key. 
 
-   2. You can **only** make 50 requests/fetch call per month. 
+   2. You can **only** make 10000 requests/fetch call per month. 
 
 3. [All Mutual Funds API](https://api.mfapi.in/mf): This API returns a JSON response with all the listed Mutual Funds in Indian Stock Market
 

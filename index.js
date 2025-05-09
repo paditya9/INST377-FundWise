@@ -14,27 +14,21 @@ const supabaseKey = process.env.SUPABASE_KEY
 const supabase = supabaseClient.createClient(supabaseURL, supabaseKey);
 
 app.get('/', (req, res) => {
-res.sendFile('/public/home.html', {root: __dirname});
+    res.sendFile('/public/home.html', {root: __dirname});   
 });
 
 // QUOTES
 app.get('/api/quote', async (req, res) => {
-const response = await fetch('https://api.api-ninjas.com/v1/quotes', {
-headers: { 
-    'X-Api-Key': process.env.API_NINJAS_KEY }
-});
-const data = await response.json();
-res.json(data); 
+    const response = await fetch(`https://api.api-ninjas.com/v1/quotes?X-Api-Key=${process.env.API_NINJAS_KEY}`);
+    const data = await response.json();
+    res.json(data); 
 });
 
 // NEWS
 app.get('/api/news', async (req, res) => {
-const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${process.env.API_NEWS_KEY}', {
-headers: { 
-    'X-Api-Key': process.env.API_NEWS_KEY }
-});
-const data = await response.json();
-res.json(data); 
+    const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${process.env.API_NEWS_KEY}`);
+    const data = await response.json();
+    res.json(data); 
 });
 
 // SEARCHES
@@ -58,7 +52,7 @@ app.get('/api/recent-searches', async (req, res) => {
 });
 
 app.listen(port, () => {
-console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http://localhost:${port}`);
 });
 
 // app.get('/customers', async (req, res) => {
