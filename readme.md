@@ -1,11 +1,15 @@
 - [FundWise](#fundwise)
 - [Introduction](#introduction)
 - [Key Features](#key-features)
-- [Developers Manual](#developers-manual)
+- [Developer's Manual](#developers-manual)
 
 # FundWise 
 
 Where Investing is Simplified for Everybody
+
+**Author & Developer:** Adityaraj Padmanabhan
+**University:** The University of Maryland, College Park
+**Course:** INST 377 - Web Development
 
 # Introduction
 
@@ -20,8 +24,8 @@ Where Investing is Simplified for Everybody
 
 4. Interactive Charts 📈 – Visualize NAV history and trends to make sense of fund performance.
 
-**FundWise** empowers Indian investors—especially those just starting out—to make data-driven decisions right at their fingertips.
+**FundWise** aims to shape and empowers Indian investors—especially those who are just starting out—to make data-driven decisions right at their fingertips.
 
-# Developers Manual
+# Developer's Manual
 
 To better understand the intial setup instructions, proper usage of API, and deployment steps, please refer [Developer Manual](docs/dev_manual.md)
