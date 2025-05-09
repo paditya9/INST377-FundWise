@@ -29,7 +29,7 @@ res.json(data);
 
 // NEWS
 app.get('/api/news', async (req, res) => {
-const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=c9227ba296ff4356adb93d9f5047c1d3', {
+const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${process.env.API_NEWS_KEY}', {
 headers: { 
     'X-Api-Key': process.env.API_NEWS_KEY }
 });

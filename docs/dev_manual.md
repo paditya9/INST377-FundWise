@@ -31,6 +31,7 @@ Welcome to the Developer's Manual section, where I (Adityaraj) will personal wal
 4. Install Body Parser: `npm install body-parser`
 
 5. Install DotEnv: `npm install dotenv`
+**Disclaimer:** Create a new file named `.env` in the `root directory` (not the public folder). Store all your API keys in this file to maintain confidentiality and security.
 
 
 ### 2.0.3. Run
@@ -57,7 +58,57 @@ To view the logs:
 FundWise using multiple API to make it more intuitve and personalized for you! Please review below all the API's to better understand the code funtionality. 
 
 ### List of API's
-1. 
+1. [Latest Business News](https://newsapi.org): This API fetches top business related news articles currently in United States.
+   1. **Note:** You will need to create an account and get your own API Key. 
+
+   2. You can make unlimited requests. 
+
+2. [Investment Quotes](https://api.api-ninjas.com/v1/quotes): This API fetches motivational quotes from famous Investors like Warren Buffett and others. 
+
+   1. **Note:** You will need to create an account and get your own API Key. 
+
+   2. You can **only** make 50 requests/fetch call per month. 
+
+3. [All Mutual Funds API](https://api.mfapi.in/mf): This API returns a JSON response with all the listed Mutual Funds in Indian Stock Market
+
+   1. Review the sample JSON response
+        ```json
+        [
+        {
+            "schemeCode": 100027,
+            "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Half Yearly Dividend",
+            "isinGrowth": null,
+            "isinDivReinvestment": null
+        },
+        {
+            "schemeCode": 100028,
+            "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Quarterly Dividend",
+            "isinGrowth": null,
+            "isinDivReinvestment": null
+        }
+        ]
+        ```
+4. [Specfic Mutual Fund](https://api.mfapi.in/mf/103504): This API returns the history NAV for `scheme_code = 103504`. 
+
+   1. Review the sample JSON response
+     ```json
+     {
+    "meta": {
+        "fund_house": "SBI Mutual Fund",
+        "scheme_type": "Open Ended Schemes",
+        "scheme_category": "Equity Scheme - Large Cap Fund",
+        "scheme_code": 103504,
+        "scheme_name": "SBI BLUE CHIP FUND-REGULAR PLAN GROWTH",
+        "isin_growth": "INF200K01180",
+        "isin_div_reinvestment": null
+    },
+    "data": [
+        {
+        "date": "08-05-2025",
+        "nav": "88.52340"
+        }
+    }
+     ```
 
 
 # 5. Bugs and Issue 
