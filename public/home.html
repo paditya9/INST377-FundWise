@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>FundWise - Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="audiostyle.css">
+    <script src="home.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script> 
+  </head>
+  
+  <body>
+    <header>
+      <h1>FundWise - Dashboard</h1>
+      <h2>Welcome to FundWise: Where Investing in Simplified</h2><hr>
+    </header>
+
+    <nav id="nav-bar">
+      <ul>
+        <!-- HOME; ABOUT; STOCKS -->
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li id="stock-bar"><a href="stocks.html">Stocks Analysis</a></li>
+      </ul>
+    </nav>
+
+    <section id="news-section">
+      <h1>Today's Top Business Headlines</h1>
+      <div id="news"></div>
+    </section>
+
+    <section id="investing-quote">
+      <h1>Investing Quote of the Day</h1>
+      <blockquote id="quote-text">Loading quote...</blockquote>
+      <cite id="quote-author"></cite>
+    </section>
+
+    <section id="fund-of-the-day">
+      <h1>Fund of the Day</h1>
+      <p> <span><strong>Disclaimer:</strong></span> Please copy the entire name of the fund before proceeding</p>
+      <div id="fund-of-the-day-content"></div>
+    </section>
+  
+    <section id="audio-feature">
+      <!-- <section id="audio-inst"> -->
+      <h2>Introducing <span>Echo</span> your personalized Voice Assitant!</h2>
+      <h3><span><strong>Echo</strong></span> enables you to navigate through pages using using Audio!</h3>
+      <h3>Ensure your Microphone is enabled to be able to use this feature</h5>
+      <ul>
+          <!-- FIX PAGE NAME WITH HTML NAME -->
+          <li>Navigate to Different Page
+              <ul><li>Say: <strong>Echo, navigate to &lt;page&gt </strong></li></ul> 
+          </li>
+          <li>Change the Page color
+              <ul><li>Say: <strong>Echo, change the Color to &lt;color&gt </strong> </li></ul>
+          </li>
+          <li>Make it more communicative!
+              <ul><li>Say: <strong>Hi Echo, how are you?</strong></li></ul>
+          </li>
+      </ul> 
+      <!-- </section> -->
+      <div id="audio-button">
+        <button id="start-listening" onclick="toggleListening(true)">Turn On Listening</button>
+        <button id="stop-listening" onclick="toggleListening(false)">Turn Off Listening</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; Adityaraj Padmanabhan</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>FundWise - Compare Mutual Funds</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="history.css" />
+    <link rel="stylesheet" href="audiostyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script> 
+    <script src="history.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>FundWise - Comparison Tool</h1>
+    </header>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="stocks.html">Stocks Analysis</a></li>
+      </ul>
+    </nav>
+
+    <section id="search-section">
+      <input type="text" id="search-input" placeholder="Enter fund name..." />
+      <button id="search-button">Search</button>
+      <ul id="search-results"></ul>
+    </section>
+    
+    <section id="recent-searches">
+      <h2 id="recent-search-header">Recently Searched</h2>
+      <ul id="recent-search-list"></ul>
+    </section>
+
+    <section id="compare-section">
+      <h2>Selected Funds</h2>
+      <h4>You can select a maximum of 4 funds to compare at the same time.</h4>
+      <div id="selected-funds"></div>
+    </section>
+
+    <section id="chart-section">
+      <h2>Chart Comparison</h2>
+      <h4>You can select a maximum of 2 fund to visualize at the same time.</h4>
+      <canvas id="nav-chart" width="800" height="400"></canvas>
+    </section>
+
+    <section id="audio-feature">
+      <!-- <section id="audio-inst"> -->
+      <h2>Introducing <span>Echo</span> your personalized Voice Assitant!</h2>
+      <h3><span><strong>Echo</strong></span> enables you to navigate through pages using using Audio!</h3>
+      <h3>Ensure your Microphone is enabled to be able to use this feature</h5>
+      <ul>
+          <!-- FIX PAGE NAME WITH HTML NAME -->
+          <li>Navigate to Different Page
+              <ul><li>Say: <strong>Echo, navigate to &lt;page&gt </strong></li></ul> 
+          </li>
+          <li>Change the Page color
+              <ul><li>Say: <strong>Echo, change the Color to &lt;color&gt </strong> </li></ul>
+          </li>
+          <li>Make it more communicative!
+              <ul><li>Say: <strong>Hi Echo, how are you?</strong></li></ul>
+          </li>
+          <li> <span><strong>SPECIAL FEATURE: </strong></span> Search Mutual Funds with you voice command
+            <ul><li>Say: <strong>Echo, search &lt;Stock/Fund&gt</strong></li></ul>
+          </li>
+      </ul> 
+      <!-- </section> -->
+      <div id="audio-button">
+        <button id="start-listening" onclick="toggleListening(true)">Turn On Listening</button>
+        <button id="stop-listening" onclick="toggleListening(false)">Turn Off Listening</button>
+      </div>
+    </section>
+    
+  </body>
+</html> 
+

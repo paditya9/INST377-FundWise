@@ -1,0 +1,132 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: whitesmoke;
+  color: black;
+  padding: 2%;
+  width: 96%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+h1 {
+  font-size: 250%;
+  margin-bottom: 1%; 
+}
+
+h2 {
+  font-size: 150%;
+}
+
+#nav-bar {
+  background-color: lightgrey;
+  padding: 1%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+#nav-bar ul li {
+  display: inline;
+  margin-right: 4%;
+}
+
+#nav-bar ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 100%;
+  background-color: lightgrey;
+}
+
+#nav-bar ul li a:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+section {
+  margin-top: 3%;
+  padding: 2%;
+  background-color: white;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#fund-of-the-day-content {
+  border: 0.2% solid #999;
+  padding: 2%;
+  background-color: lightsalmon;
+  border-radius: 1%;
+  margin-top: 1%;
+}
+
+/* #fund-of-the-day-content button:hover {
+  background-color: greenyellow;
+  font-weight: bold;
+} */
+
+#recently-list li {
+  margin-top: 1%;
+  padding: 1%;
+  border: 0.2% solid #aaa;
+  background-color: #f7f7f7;
+}
+
+footer {
+  margin-top: 3%;
+  text-align: center;
+  font-size: 90%;
+}
+
+/* <!-- HTML !-->
+<button class="button-28" role="button">Button 28</button> */
+
+/* CSS */
+#fund-of-the-day-content button {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 40px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10%;
+  will-change: transform;
+}
+
+#fund-of-the-day-content button:disabled {
+  pointer-events: none;
+}
+
+#fund-of-the-day-content button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#fund-of-the-day-content button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+

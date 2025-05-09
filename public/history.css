@@ -1,0 +1,244 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: whitesmoke;
+  color: black;
+  padding: 2%;
+  width: 96%;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+h1 {
+  font-size: 250%;
+  margin-bottom: 1%;
+}
+
+h2 {
+  font-size: 150%;
+  margin-top: 2%;
+}
+
+h4 {
+  font-size: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#nav-bar {
+  background-color: lightgrey;
+  padding: 1%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+#nav-bar ul li {
+  display: inline;
+  margin-right: 4%;
+}
+
+#nav-bar ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 100%;
+  background-color: lightgrey;
+}
+
+#nav-bar ul li a:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+section {
+  margin-top: 3%;
+  padding: 2%;
+  background-color: white;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#search-section input {
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+#search-results {
+  padding-left: 0;
+  margin-top: 1%;
+  width: 100%;
+}
+
+#search-results li {
+  margin-top: 1%;
+  padding: 1%;
+  background-color: whitesmoke;
+}
+
+#search-results li:hover {
+  background-color: #d3f2d3;
+  font-weight: bold;
+}
+
+#selected-funds {
+  width: 100%;
+  margin-top: 2%;
+}
+
+#compare-section {
+  text-align: center;
+}
+
+.fund-box {
+  padding: 2%;
+  width: 40%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  background-color: whitesmoke;
+  border-radius: 2%;
+  display: inline-block;
+}
+
+.fund-box button {
+  margin-top: 2%;
+  padding: 1%;
+  font-size: 90%;
+}
+
+/* .fund-box button:hover{
+  background-color: greenyellow;
+  font-weight: bold;
+} */
+
+#chart-section {
+  text-align: center;
+}
+
+#nav-chart {
+  width: 100%;
+  margin-top: 2%;
+}
+
+/* <!-- HTML !-->
+<button class="button-21" role="button">Button 21</button> */
+
+/* CSS */
+#search-button{
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+#search-button:active,
+#search-button:focus {
+  outline: none;
+}
+
+#search-button:hover {
+  background-position: -20px -20px;
+}
+
+#search-button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+/* <!-- HTML !-->
+<button class="button-85" role="button">Button 85</button> */
+
+/* CSS */
+.fund-box button {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.fund-box button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.fund-box button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
