@@ -92,7 +92,7 @@ FundWise using multiple API to make it more intuitve and personalized for you! P
 4. [Specfic Mutual Fund](https://api.mfapi.in/mf/103504): This API returns the history NAV for `scheme_code = 103504`. 
 
    1. Review the sample JSON response
-     ```json
+    ```json
     {
     "meta": {
         "fund_house": "SBI Mutual Fund",
@@ -109,7 +109,7 @@ FundWise using multiple API to make it more intuitve and personalized for you! P
         "nav": "88.52340"
         }
     }
-     ```
+    ```
 
 
 # 5. Bugs and Issue 
