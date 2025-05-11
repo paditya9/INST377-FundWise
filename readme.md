@@ -3,9 +3,11 @@
 - [Key Features](#key-features)
 - [Developer's Manual](#developers-manual)
 
-# FundWise 
+# [FundWise](https://inst-377-fund-wise.vercel.app/)
 
 **Where Investing is Simplified for Everybody**
+
+**Link to FundWise:** https://inst-377-fund-wise.vercel.app/ 
 
 
 
