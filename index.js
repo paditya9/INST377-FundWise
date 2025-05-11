@@ -51,6 +51,14 @@ app.get('/api/recent-searches', async (req, res) => {
     res.json(data || []);
 });
 
+// FEEDBACK
+app.post('/api/feedback', async (req, res) => {
+    const { feedback } = req.body;
+    await supabase.from('feedback')
+        .insert([{ user_feedback: feedback }]);
+    res.end();
+  });
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });

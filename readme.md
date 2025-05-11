@@ -8,8 +8,11 @@
 Where Investing is Simplified for Everybody
 
 **Author & Developer:** Adityaraj Padmanabhan
+
 **University:** The University of Maryland, College Park
+
 **Course:** INST 377 - Web Development
+
 
 # Introduction
 

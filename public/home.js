@@ -56,8 +56,21 @@ async function loadFundOfTheDay() {
 }
 
 function viewFund(code) {
-  // need to copy the fund name?
+  // need to copy the fund name? Try to autocopy and paste in search 
   window.location.href = `history.html?schemeCode=${code}`;
+}
+
+async function loadFeedback() {
+  const feedback = document.getElementById('feedback-input').value.trim();
+
+  await fetch('/api/feedback', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ feedback })
+  });
+
+  document.getElementById('feedback-input').value = '';
+  alert('Thanks for your feedback!');
 }
 
 if (annyang) {
