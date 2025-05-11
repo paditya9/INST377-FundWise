@@ -5,7 +5,7 @@
 
 # [FundWise](https://inst-377-fund-wise.vercel.app/)
 
-**Where Investing is Simplified for Everybody**
+> **Where Investing is Simplified for Everybody**
 
 **Link to FundWise:** https://inst-377-fund-wise.vercel.app/ 
 
