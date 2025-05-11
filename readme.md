@@ -5,7 +5,7 @@
 
 # FundWise 
 
-Where Investing is Simplified for Everybody
+**Where Investing is Simplified for Everybody**
 
 **Author & Developer:** Adityaraj Padmanabhan
 
