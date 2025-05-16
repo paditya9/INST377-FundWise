@@ -69,9 +69,9 @@ FundWise using multiple API to make it more intuitve and personalized for you! P
         {
             "status": "ok",
             "totalResults": 8739,
-            -"articles": [
-            -{
-            -"source": {
+            "articles": [
+            {
+            "source": {
             "id": null,
             "name": "Securityaffairs.com"
             },
