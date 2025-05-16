@@ -64,52 +64,85 @@ FundWise using multiple API to make it more intuitve and personalized for you! P
 
    2. You can make unlimited requests. 
 
+   3. Review the sample JSON reponse
+        ```json
+        {
+            "status": "ok",
+            "totalResults": 8739,
+            -"articles": [
+            -{
+            -"source": {
+            "id": null,
+            "name": "Securityaffairs.com"
+            },
+            "author": "Pierluigi Paganini",
+            "title": "Google fixed a Chrome vulnerability that could lead to full account takeover",
+            "description": "Google released emergency security updates to fix a Chrome vulnerability that could lead to full account takeover. Google released emergency security updates to address a Chrome browser vulnerability, tracked as CVE-2025-4664, that could lead to full account …",
+            "url": "https://securityaffairs.com/177899/security/google-fixed-a-chrome-vulnerability-that-could-lead-to-full-account-takeover.html",
+            "urlToImage": "https://securityaffairs.com/wp-content/uploads/2016/03/google-chrome-bounty-program.jpg",
+            "publishedAt": "2025-05-16T07:40:34Z",
+            "content": "Google fixed a Chrome vulnerability that could lead to full account takeover\r\n | Nova Scotia Power discloses data breach after March security incident\r\n | Coinbase disclosed a data breach after an ex… [+164591 chars]"
+            }]
+        }
+        ```
+
 2. [Investment Quotes](https://api.api-ninjas.com/v1/quotes): This API fetches motivational quotes from famous Investors like Warren Buffett and others. 
 
    1. **Note:** You will need to create an account and get your own API Key. 
 
    2. You can **only** make 10000 requests/fetch call per month. 
 
+   3. Review sample JSON response
+        ```json
+        [
+            {
+                "quote": "The will of man is his happiness.",
+                "author": "Friedrich Schiller",
+                "category": "happiness"
+            }
+        ]
+        ```
+
 3. [All Mutual Funds API](https://api.mfapi.in/mf): This API returns a JSON response with all the listed Mutual Funds in Indian Stock Market
 
    1. Review the sample JSON response
         ```json
         [
-        {
-            "schemeCode": 100027,
-            "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Half Yearly Dividend",
-            "isinGrowth": null,
-            "isinDivReinvestment": null
-        },
-        {
-            "schemeCode": 100028,
-            "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Quarterly Dividend",
-            "isinGrowth": null,
-            "isinDivReinvestment": null
-        }
+            {
+                "schemeCode": 100027,
+                "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Half Yearly Dividend",
+                "isinGrowth": null,
+                "isinDivReinvestment": null
+            },
+            {
+                "schemeCode": 100028,
+                "schemeName": "Grindlays Super Saver Income Fund-GSSIF-Quarterly Dividend",
+                "isinGrowth": null,
+                "isinDivReinvestment": null
+            }
         ]
         ```
 4. [Specfic Mutual Fund](https://api.mfapi.in/mf/103504): This API returns the history NAV for `scheme_code = 103504`. 
 
    1. Review the sample JSON response
-    ```json
-    {
-    "meta": {
-        "fund_house": "SBI Mutual Fund",
-        "scheme_type": "Open Ended Schemes",
-        "scheme_category": "Equity Scheme - Large Cap Fund",
-        "scheme_code": 103504,
-        "scheme_name": "SBI BLUE CHIP FUND-REGULAR PLAN GROWTH",
-        "isin_growth": "INF200K01180",
-        "isin_div_reinvestment": null
-    },
-    "data": [
+        ```json
         {
-        "date": "08-05-2025",
-        "nav": "88.52340"
+            "meta": {
+                "fund_house": "SBI Mutual Fund",
+                "scheme_type": "Open Ended Schemes",
+                "scheme_category": "Equity Scheme - Large Cap Fund",
+                "scheme_code": 103504,
+                "scheme_name": "SBI BLUE CHIP FUND-REGULAR PLAN GROWTH",
+                "isin_growth": "INF200K01180",
+                "isin_div_reinvestment": null
+            },
+            "data": [
+                {
+                "date": "08-05-2025",
+                "nav": "88.52340"
+                }]
         }
-    }
-    ```
+        ```
 
 
 # 5. Bugs and Issue 
