@@ -62,34 +62,3 @@ app.post('/api/feedback', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
-
-// app.get('/customers', async (req, res) => {
-//     console.log("Attempting to GET all Customer")
-
-//     const {data, error } = await supabase.from('customers').select()
-//     if (error){
-//         console.log(`Error:  ${error}`);
-//         res.send(error)
-//     }
-//     res.send(data)
-// });
-
-// app.post('/customer', async (req, res) => {
-//     console.log("Adding Customer");
-
-//     console.log(req.body);
-//     const customer_fname = req.body.customer_fname;
-//     const customer_lname = req.body.customer_lname;
-
-//     const {data, error} = await supabase
-//         .from('customers')
-//         .insert({
-//             customer_fname: customer_fname, 
-//             customer_lname:customer_lname 
-//         })
-//         .select();
-
-//     res.send(data);
-// });
-
-

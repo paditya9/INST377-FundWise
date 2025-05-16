@@ -1,4 +1,5 @@
-// Get Ideas on how can do this instead of hard-coding
+// Recommendation: Work on generating random codes instead of hard-coding. 
+// There are 1000's of Mutual Funds, so iterating thru all will increase the load. 
 const sampleCodes = [118550, 112277, 101206, 103504, 100277];
 
 async function loadInvestingQuote() {
@@ -44,6 +45,8 @@ async function loadFundOfTheDay() {
   const randomCode = sampleCodes[Math.floor(Math.random() * sampleCodes.length)];
   try {
     const res = await fetch(`https://api.mfapi.in/mf/${randomCode}`);
+    console.log("Received Fund of the Day");
+
     const data = await res.json();
     const container = document.getElementById('fund-of-the-day-content');
 

@@ -7,6 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script> 
     <script src="history.js" defer></script>
   </head>
+
   <body>
     <header>
       <h1>FundWise - Comparison Tool</h1>
@@ -21,7 +22,7 @@
     </nav>
 
     <section id="search-section">
-      <input type="text" id="search-input" placeholder="Enter fund name..." />
+      <input type="text" id="search-input" required placeholder="Enter fund name..." />
       <button id="search-button">Search</button>
       <ul id="search-results"></ul>
     </section>
@@ -44,12 +45,10 @@
     </section>
 
     <section id="audio-feature">
-      <!-- <section id="audio-inst"> -->
       <h2>Introducing <span>Echo</span> your personalized Voice Assitant!</h2>
       <h3><span><strong>Echo</strong></span> enables you to navigate through pages using using Audio!</h3>
       <h3>Ensure your Microphone is enabled to be able to use this feature</h5>
       <ul>
-          <!-- FIX PAGE NAME WITH HTML NAME -->
           <li>Navigate to Different Page
               <ul><li>Say: <strong>Echo, navigate to &lt;page&gt </strong></li></ul> 
           </li>
@@ -63,13 +62,11 @@
             <ul><li>Say: <strong>Echo, search &lt;Stock/Fund&gt</strong></li></ul>
           </li>
       </ul> 
-      <!-- </section> -->
       <div id="audio-button">
         <button id="start-listening" onclick="toggleListening(true)">Turn On Listening</button>
         <button id="stop-listening" onclick="toggleListening(false)">Turn Off Listening</button>
       </div>
     </section>
-    
   </body>
 </html> 
 
