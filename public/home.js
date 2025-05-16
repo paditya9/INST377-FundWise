@@ -4,6 +4,8 @@ const sampleCodes = [118550, 112277, 101206, 103504, 100277];
 async function loadInvestingQuote() {
   try {
     const response = await fetch('/api/quote');
+    console.log("Received Quotes API");
+
     const data = await response.json();
     const quote = data[0];
     
@@ -18,6 +20,8 @@ async function loadInvestingQuote() {
 async function loadNews() {
   try {
     const response = await fetch('/api/news');
+    console.log("Received Quotes API");
+
     const data = await response.json();
     const articles = data.articles;
     const randonNews = articles[Math.floor(Math.random() * articles.length)];
