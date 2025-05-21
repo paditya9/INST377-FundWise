@@ -64,7 +64,7 @@ async function loadFundOfTheDay() {
 
 function viewFund(code) {
   // need to copy the fund name? Try to autocopy and paste in search 
-  window.location.href = `history.html?schemeCode=${code}`;
+  window.location.href = `stocks.html?schemeCode=${code}`;
 }
 
 async function loadFeedback() {
